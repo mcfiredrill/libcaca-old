@@ -114,17 +114,17 @@ static VALUE set_time2(VALUE self, VALUE t)
 
 static VALUE get_time(VALUE self)
 {
-    return NUM2UINT(caca_get_display_time(_SELF));
+    return UINT2NUM(caca_get_display_time(_SELF));
 }
 
 static VALUE get_width(VALUE self)
 {
-    return NUM2UINT(caca_get_display_width(_SELF));
+    return UINT2NUM(caca_get_display_width(_SELF));
 }
 
 static VALUE get_height(VALUE self)
 {
-    return NUM2UINT(caca_get_display_height(_SELF));
+    return UINT2NUM(caca_get_display_height(_SELF));
 }
 
 static VALUE set_title(VALUE self, VALUE t)
@@ -144,12 +144,12 @@ static VALUE set_title2(VALUE self, VALUE t)
 
 static VALUE get_mouse_x(VALUE self)
 {
-    return NUM2UINT(caca_get_mouse_x(_SELF));
+    return UINT2NUM(caca_get_mouse_x(_SELF));
 }
 
 static VALUE get_mouse_y(VALUE self)
 {
-    return NUM2UINT(caca_get_mouse_y(_SELF));
+    return UINT2NUM(caca_get_mouse_y(_SELF));
 }
 
 static VALUE set_mouse(VALUE self, VALUE visible)

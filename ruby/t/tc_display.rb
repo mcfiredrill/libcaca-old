@@ -31,4 +31,21 @@ class TC_Canvas < Test::Unit::TestCase
         d = Caca::Display.new()
         d.cursor = 1
     end
+    def test_get_mouse_coordinates
+        c = Caca::Canvas.new(3, 3)
+        d = Caca::Display.new(c)
+        assert_not_nil(d.mouse_x)
+        assert_not_nil(d.mouse_y)
+    end
+    def test_get_display_dimensions
+        c = Caca::Canvas.new(3, 3)
+        d = Caca::Display.new(c)
+        assert_not_nil(d.height)
+        assert_not_nil(d.width)
+    end
+    def test_get_time
+        c = Caca::Canvas.new(3, 3)
+        d = Caca::Display.new(c)
+        assert_not_nil(d.time)
+    end
 end
