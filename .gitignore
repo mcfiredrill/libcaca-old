@@ -76,6 +76,7 @@ examples/unicode
 # Ruby binaries
 ruby/*/mkmf.log
 ruby/*/*.so
+ruby/*.gem
 # Python binaries
 python/*/*.pyc
 python/*.egg-info

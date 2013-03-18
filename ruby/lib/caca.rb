@@ -1,4 +1,5 @@
-require 'caca.so'
+require 'caca/caca.so'
+require 'caca/version'
 
 module Caca
     class Display
